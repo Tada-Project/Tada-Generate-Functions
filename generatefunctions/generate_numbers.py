@@ -28,3 +28,16 @@ def generate_bitdepth(chosen_size):
     lowerbound = 10 ** (int(chosen_size) - 1)
     upperbound = (10 ** int(chosen_size)) - 1
     return random.randint(lowerbound, upperbound)
+
+
+def generate_single_int_special_case(chosen_size):
+    """Generate an int value"""
+    if chosen_size == 25:
+        retulst = (100,)
+    if chosen_size == 50:
+        retulst = (400,)
+    if chosen_size == 100:
+        retulst = (1000,)
+    if chosen_size == 200:
+        retulst = (7000,)
+    return retulst
